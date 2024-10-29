@@ -15,7 +15,8 @@ import com.aditya.color_app.ui.theme.ColorAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 
-//  Features Added 
+//  Features Added
+// Bugs Fixed
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
