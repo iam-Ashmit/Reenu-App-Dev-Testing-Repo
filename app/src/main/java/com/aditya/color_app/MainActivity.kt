@@ -14,9 +14,10 @@ import com.aditya.color_app.Screens.Home
 import com.aditya.color_app.ui.theme.ColorAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+
+//  Features Added 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,10 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
 
             val navController=rememberNavController()
-
-
             ColorAppTheme {
-
                     NavHost(navController = navController, startDestination ="Home" ) {
                         composable("Home"){
                             Home(viewModel,navController)
